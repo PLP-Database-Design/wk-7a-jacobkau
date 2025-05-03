@@ -1,6 +1,4 @@
--- 📚 Assignment: Achieving 1NF and 2NF
-
--- 🔸 Question 1: Transform ProductDetail table to achieve 1NF
+--  Question 1: Transform ProductDetail table to achieve 1NF
 -- Create the original table with multi-valued attribute (not normalized)
 CREATE TEMPORARY TABLE ProductDetail (
     OrderID INT,
@@ -39,7 +37,7 @@ FROM (
 
 -- Note: In production, create a proper normalized table instead of this dynamic SELECT.
 
--- 🔸 Question 2: Transform OrderDetails table to achieve 2NF
+--  Question 2: Transform OrderDetails table to achieve 2NF
 -- Create original 1NF table with partial dependencies
 CREATE TEMPORARY TABLE OrderDetails (
     OrderID INT,
